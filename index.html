@@ -730,7 +730,7 @@
         no.style.top = `${y}px`;
         no.style.transform = `rotate(${Math.random() * 12 - 6}deg)`;
         no.textContent = attempts > 5 ? "Still no 🙈" : "No";
-        caption.textContent = captions[Math.min(attempts - 1, captions.length - 1)];
+        caption.textContent = captions[(attempts - 1) % captions.length];
       }
 
       ["pointerenter","pointerdown","focus"].forEach((eventName) => {
