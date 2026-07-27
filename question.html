@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7dce9">
+  <title>The question 👀</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="floating-layer" aria-hidden="true"></div>
+  <div class="progress-dots" aria-label="Step 2 of 5"><span></span><span class="active"></span><span></span><span></span><span></span></div>
+  <main class="app-shell">
+    <section class="page-card">
+      <div id="questionContent" style="width:100%">
+        <p class="eyebrow">Answer honestly</p>
+        <h1 data-config="question">Do you miss me?</h1>
+        <p class="lead">Choose carefully. One of these buttons has suspicious behavior.</p>
+        <div id="questionZone" class="question-zone">
+          <button id="yesBtn" class="btn btn-primary" type="button">Yes, a little 😌</button>
+          <button id="noBtn" class="btn btn-soft" type="button">No</button>
+        </div>
+        <div id="dodgeCaption" class="dodge-caption" aria-live="polite"></div>
+      </div>
+
+      <div id="yesReveal" class="hidden">
+        <div class="reaction-emoji" aria-hidden="true">🥹💗</div>
+        <p class="eyebrow">Wait—you actually said yes?</p>
+        <h2>I was fully prepared for you to fight the button.</h2>
+        <p class="lead">Okay, okay. Since you admitted it, you’ve unlocked the next tiny challenge.</p>
+        <div class="btn-row">
+          <button id="questionNext" class="btn btn-primary" type="button">Bring on the challenge →</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="config.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/question.js"></script>
+</body>
+</html>

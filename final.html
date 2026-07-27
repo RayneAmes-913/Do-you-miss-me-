@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7dce9">
+  <title>One last thing 💗</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="floating-layer" aria-hidden="true"></div>
+  <div class="progress-dots" aria-label="Step 5 of 5"><span></span><span></span><span></span><span></span><span class="active"></span></div>
+  <main class="app-shell">
+    <section class="page-card">
+      <p class="eyebrow">Final message</p>
+      <h2 data-config="finalTitle">You made it to the end!</h2>
+      <div class="final-letter">
+        <div id="finalLetterBody"></div>
+        <div id="signature" class="signature"></div>
+      </div>
+      <div class="btn-row">
+        <button id="copyReply" class="btn btn-primary" type="button">Copy a cute reply 💬</button>
+        <button id="replayBtn" class="btn btn-soft" type="button">Replay ↺</button>
+      </div>
+      <p class="tiny-note">Warning: side effects may include random smiling and thinking of me.</p>
+    </section>
+  </main>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="config.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/final.js"></script>
+</body>
+</html>

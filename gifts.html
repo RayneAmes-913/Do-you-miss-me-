@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7dce9">
+  <title>Choose a gift 🎁</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="floating-layer" aria-hidden="true"></div>
+  <div class="progress-dots" aria-label="Step 4 of 5"><span></span><span></span><span></span><span class="active"></span><span></span></div>
+  <main class="app-shell">
+    <section class="page-card">
+      <p class="eyebrow">One free prize</p>
+      <h2>Pick your mystery gift</h2>
+      <p class="lead">There are no wrong answers—only increasingly questionable prizes.</p>
+
+      <div class="gift-grid">
+        <button class="gift" data-gift="one" type="button">
+          <span class="gift-emoji" aria-hidden="true">🎁</span>
+          <span class="gift-label">Box number one</span>
+        </button>
+        <button class="gift" data-gift="two" type="button">
+          <span class="gift-emoji" aria-hidden="true">🎁</span>
+          <span class="gift-label">Box number two</span>
+        </button>
+        <button class="gift" data-gift="three" type="button">
+          <span class="gift-emoji" aria-hidden="true">🎁</span>
+          <span class="gift-label">The suspicious one</span>
+        </button>
+      </div>
+
+      <div id="giftResult" class="gift-result" aria-live="polite"></div>
+      <div class="btn-row">
+        <button id="giftNext" class="btn btn-primary hidden" type="button">Open the final letter →</button>
+      </div>
+    </section>
+  </main>
+  <script src="config.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/gifts.js"></script>
+</body>
+</html>

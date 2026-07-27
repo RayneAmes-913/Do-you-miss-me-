@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7dce9">
+  <title>Pop the balloons 🎈</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="floating-layer" aria-hidden="true"></div>
+  <div class="progress-dots" aria-label="Step 3 of 5"><span></span><span></span><span class="active"></span><span></span><span></span></div>
+  <main class="app-shell">
+    <section class="page-card">
+      <p class="eyebrow">Mini game</p>
+      <h2>Pop every balloon</h2>
+      <p class="lead">There’s a tiny message hiding inside. Very advanced technology.</p>
+
+      <div class="balloon-game" aria-label="Balloon popping game">
+        <button class="balloon" data-word="You" aria-label="Pop balloon 1" style="left:8%;top:10%;--balloon-color:#ef6f9f;--bob:2.7s"><span>?</span></button>
+        <button class="balloon" data-word="make" aria-label="Pop balloon 2" style="left:38%;top:6%;--balloon-color:#9a86e8;--bob:3.2s"><span>?</span></button>
+        <button class="balloon" data-word="my" aria-label="Pop balloon 3" style="right:9%;top:16%;--balloon-color:#f3ad4e;--bob:2.9s"><span>?</span></button>
+        <button class="balloon" data-word="days" aria-label="Pop balloon 4" style="left:17%;bottom:19%;--balloon-color:#64becb;--bob:3.3s"><span>?</span></button>
+        <button class="balloon" data-word="more" aria-label="Pop balloon 5" style="left:48%;bottom:10%;--balloon-color:#e85d8e;--bob:2.6s"><span>?</span></button>
+        <button class="balloon" data-word="fun. 💗" aria-label="Pop balloon 6" style="right:11%;bottom:21%;--balloon-color:#7bc77e;--bob:3s"><span>?</span></button>
+      </div>
+
+      <div id="popCounter" class="game-status" aria-live="polite">0 / 6 popped</div>
+      <div id="secretLine" class="secret-line" aria-live="polite"></div>
+      <div class="btn-row">
+        <button id="balloonNext" class="btn btn-primary hidden" type="button">Claim a surprise →</button>
+      </div>
+    </section>
+  </main>
+  <script src="config.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/balloons.js"></script>
+</body>
+</html>

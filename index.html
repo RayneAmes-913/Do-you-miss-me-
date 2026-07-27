@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7dce9">
+  <meta name="description" content="A tiny interactive surprise.">
+  <title>A tiny surprise 💌</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="floating-layer" aria-hidden="true"></div>
+  <main class="app-shell">
+    <section class="page-card">
+      <p class="eyebrow">Special delivery</p>
+      <h1 data-config="openingLine">I have a tiny question for you...</h1>
+      <p class="lead">It arrived in a very serious, totally official envelope.</p>
+
+      <div id="envelopeStage" class="envelope-stage" role="button" tabindex="0" aria-label="Open the envelope">
+        <div class="envelope">
+          <div class="envelope-back"></div>
+          <article class="letter-card">
+            <strong>For <span data-config="recipientName">you</span> 💗</strong>
+          </article>
+          <div class="envelope-flap"></div>
+          <div class="envelope-front-left"></div>
+          <div class="envelope-front-right"></div>
+          <div class="envelope-front-bottom"></div>
+          <div class="wax-seal" aria-hidden="true">♥</div>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button id="openLetterBtn" class="btn btn-primary tap-hint" type="button">Tap to open 💌</button>
+        <button id="continueBtn" class="btn btn-primary hidden" type="button">Read the question →</button>
+      </div>
+      <p class="tiny-note">No paper cuts. Probably.</p>
+    </section>
+  </main>
+  <script src="config.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/envelope.js"></script>
+</body>
+</html>
