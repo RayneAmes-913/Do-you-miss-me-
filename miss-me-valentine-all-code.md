@@ -6,7 +6,7 @@
   Keep the quotation marks around your text.
 */
 window.VALENTINE_CONFIG = {
-  senderName: "Someone who definitely wasn't nervous making this",
+  senderName: "Si Lester lang to pre😎",
   recipientName: "you",
   question: "Do you miss me?",
   openingLine: "I have a tiny question for you...",
@@ -1068,12 +1068,15 @@ document.addEventListener('DOMContentLoaded', () => {
   let attempts = 0;
 
   const captions = [
+    'sure ka?',
     'Hmm... that button seems shy.',
     'Nice try 😌',
+    'HAHAHAHAHAHA',
     'It has trust issues.',
     'Nope, it moved again.',
     'Are you chasing it now? 😂',
     'Okay, this is getting personal.',
+    'Maldita😛',
     'The No button has left the chat.'
   ];
 
